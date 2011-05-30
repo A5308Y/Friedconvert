@@ -1,0 +1,5 @@
+TODO
+
+* mehrfaches Auftreten von Übersetzungen als Vokabeln kennzeichnen
+* Design des HTMLs (vor allem ein farbiger Streifen links nach den Überschriften im Word-Dokument)
+* Einsetzen der entsprechenden Platzhalter in die HTML Datei

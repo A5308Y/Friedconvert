@@ -1,0 +1,175 @@
+<HTML>
+<HEAD>
+        <META HTTP-EQUIV="CONTENT-TYPE" CONTENT="text/html; charset=utf-8">
+        <TITLE>Lektion 12</TITLE>
+        <META NAME="GENERATOR" CONTENT="LibreOffice 3.3  (Linux)">
+        <META NAME="AUTHOR" CONTENT="vera friedländer">
+        <META NAME="CREATED" CONTENT="20100113;14370000">
+        <META NAME="CHANGEDBY" CONTENT="marvin ">
+        <META NAME="CHANGED" CONTENT="20110516;9361400">
+        <META NAME="Info 1" CONTENT="">
+        <META NAME="Info 2" CONTENT="">
+        <META NAME="Info 3" CONTENT="">
+        <META NAME="Info 4" CONTENT="">
+        <STYLE TYPE="text/css">
+        <!--
+                @page { size: 8.27in 11.69in; margin-left: 0.98in; margin-right: 0.98in; margin-top: 0.98in; margin-bottom: 0.49in }
+                P { margin-bottom: 0in; direction: ltr; color: #000000; widows: 2; orphans: 2 }
+                P.western { font-family: "Times New Roman", serif; font-size: 14pt; so-language: en-GB }
+                P.cjk { font-family: "Times New Roman", serif; font-size: 14pt }
+                P.ctl { font-family: "Times New Roman", serif; font-size: 12pt; so-language: ar-SA }
+                H1 { margin-top: 0in; margin-bottom: 0in; direction: ltr; color: #000000; widows: 2; orphans: 2 }
+                H1.western { font-family: "Times New Roman", serif; font-size: 14pt; so-language: en-GB; font-weight: normal }
+                H1.cjk { font-family: "Times New Roman", serif; font-size: 14pt; font-weight: normal }
+                H1.ctl { font-family: "Times New Roman", serif; font-size: 12pt; so-language: ar-SA; font-weight: normal }
+                H2 { margin-top: 0in; margin-bottom: 0in; direction: ltr; color: #000000; widows: 2; orphans: 2 }
+                H2.western { font-size: 14pt; so-language: en-GB }
+                H2.cjk { font-family: "Times New Roman", serif; font-size: 14pt }
+                H2.ctl { font-family: "Times New Roman", serif; font-size: 12pt; so-language: ar-SA }
+                H3 { margin-top: 0in; margin-bottom: 0in; direction: ltr; color: #000000; widows: 2; orphans: 2; text-decoration: underline }
+                H3.western { so-language: en-GB; font-weight: normal }
+                H3.cjk { font-family: "Times New Roman", serif; font-weight: normal }
+                H3.ctl { font-family: "Times New Roman", serif; font-size: 12pt; so-language: ar-SA; font-weight: normal }
+                H4 { margin-left: 0.98in; text-indent: -0.98in; margin-top: 0in; margin-bottom: 0in; direction: ltr; color: #000000; widows: 2; orphans: 2 }
+                H4.western { font-size: 14pt; so-language: en-GB }
+                H4.cjk { font-family: "Times New Roman", serif; font-size: 14pt }
+                H4.ctl { font-family: "Times New Roman", serif; so-language: ar-SA }
+                H5 { margin-top: 0in; margin-bottom: 0in; direction: ltr; color: #000000; widows: 2; orphans: 2 }
+                H5.western { font-size: 16pt; so-language: en-GB; font-weight: normal }
+                H5.cjk { font-family: "Times New Roman", serif; font-size: 16pt; font-weight: normal }
+                H5.ctl { font-family: "Times New Roman", serif; font-size: 12pt; so-language: ar-SA; font-weight: normal }
+                H6 { margin-top: 0in; margin-bottom: 0in; direction: ltr; color: #000000; widows: 2; orphans: 2 }
+                H6.western { font-size: 12pt; so-language: en-GB }
+                H6.cjk { font-family: "Times New Roman", serif; font-size: 12pt }
+                H6.ctl { font-family: "Times New Roman", serif; font-size: 12pt; so-language: ar-SA }
+                A:link { so-language: zxx }
+        -->
+        </STYLE>
+</HEAD>
+<BODY LANG="de-DE" DIR="LTR">
+<TABLE WIDTH=672 BORDER=0 CELLPADDING=0 CELLSPACING=0 STYLE="page-break-before: auto; page-break-after: auto">
+        <COL WIDTH=11>
+        <COL WIDTH=13>
+        <COL WIDTH=102>
+
+        <COL WIDTH=546>
+
+        
+<!--/Lektionsbetitelung mit Merkzeichen -->
+        <TR>
+                <TD WIDTH=11 HEIGHT=38 VALIGN=TOP BGCOLOR="#000066">
+                        <P CLASS="western" STYLE="margin-bottom: 0cm; color: #000000">&nbsp;</P>
+                </TD>
+                <TD WIDTH=13 VALIGN=TOP>
+                        <P CLASS="western" STYLE="margin-bottom: 0cm; color: #000000">&nbsp;</P>
+                </TD>
+                <TD WIDTH=102 VALIGN=BOTTOM>
+
+                        <P CLASS="fl-h2-western"><IMG SRC="fileadmin/deutschkurs/merkzeichen-l.jpg" NAME="Grafik8" ALIGN=BOTTOM WIDTH=80 HEIGHT=109 BORDER=0></P>
+                        <P CLASS="fl-h2-western"><FONT FACE="Verdana, sans-serif">Lektion
+                        NR</FONT></P>
+                </TD>
+                <TD WIDTH=546 VALIGN=BOTTOM>
+                        <P CLASS="fl-h1-western"><FONT FACE="Verdana, sans-serif">Lektionsuntertitel</FONT></P>
+                </TD>
+        </TR>
+<!--/Lektionsbetitelung-->
+        
+<!--Abstand nach unten mit gleicher Farbe -->
+        <TR>
+                <TD WIDTH=11 HEIGHT=38 VALIGN=TOP BGCOLOR="#000066">
+                        <P CLASS="western" STYLE="margin-bottom: 0cm; color: #000000">&nbsp;</P>
+                </TD>
+                <TD WIDTH=13 VALIGN=TOP>
+                        <P CLASS="western" STYLE="margin-bottom: 0cm; color: #000000">&nbsp;</P>
+                </TD>
+                <TD WIDTH=102 VALIGN=BOTTOM>
+                        <P CLASS="fl-h2-western">&nbsp;</P>
+                </TD>
+                <TD WIDTH=546 VALIGN=BOTTOM>
+                        <P CLASS="fl-h1-western" STYLE="margin-right: -0.02cm; font-weight: medium">
+                        &nbsp;</P>
+                </TD>
+        </TR>
+<!-- /Abstand          -->
+<!-- Großes Bild (Lektionstitelbild) -->
+        <TR VALIGN=TOP>
+                <TD WIDTH=11 BGCOLOR="#0099cc">
+                        <P CLASS="western" STYLE="margin-bottom: 0cm; color: #000000">&nbsp;</P>
+                </TD>
+                <TD WIDTH=13>
+                        <P CLASS="western" STYLE="margin-bottom: 0cm; color: #000000">&nbsp;</P>
+                </TD>
+                <TD WIDTH=102>
+                        <P CLASS="western" STYLE="margin-bottom: 0cm; color: #000000">&nbsp;</P>
+                </TD>
+                <TD WIDTH=546>
+                        <P CLASS="western" STYLE="margin-bottom: 0cm; color: #000000"><FONT COLOR="#000000"><IMG SRC="fileadmin/deutschkurs/lektion-14_text53.jpg" NAME="Grafik2" ALIGN=BOTTOM WIDTH=350 HEIGHT=298 BORDER=0></FONT></P>
+                </TD>
+        </TR>
+<!-- /Großes Bild  -->
+<!--Merkzeichen  -->
+        <TR VALIGN=TOP>
+                <TD WIDTH=11 BGCOLOR="#0099cc">
+                        <P CLASS="western" STYLE="margin-bottom: 0cm; color: #000000">&nbsp;</P>
+                </TD>
+                <TD WIDTH=13>
+                        <P CLASS="fl-dreieck-text-western">&nbsp;</P>
+                </TD>
+                <TD WIDTH=102>
+                        <P CLASS="fl-text-western"><IMG SRC="fileadmin/deutschkurs/merkzeichen-T.jpg" NAME="Grafik3" ALIGN=BOTTOM WIDTH=80 HEIGHT=107 BORDER=0></P>
+                </TD>
+                <TD WIDTH=546>
+                        <P CLASS="fl-text-western">&nbsp;</P>
+                </TD>
+        </TR>
+<!--/Merkzeichen  -->
+<!--Textabschnitt: Dialog  (Mit Tabelle)-->
+        <TR VALIGN=TOP>
+                <TD WIDTH=11 BGCOLOR="#0099cc">
+                        <P CLASS="western" STYLE="margin-bottom: 0cm; color: #000000">&nbsp;</P>
+                </TD>
+                <TD COLSPAN=3 WIDTH=661>
+                        <TABLE WIDTH=100% BORDER=0 CELLPADDING=0 CELLSPACING=0>
+                                <COL WIDTH=5*>
+                                <COL WIDTH=40*>
+                                <COL WIDTH=31*>
+                                <COL WIDTH=180*>
+<!--            Dialogsatz einer Person                      -->
+                                <TR VALIGN=TOP>
+                                        <TD WIDTH=2%>
+                                                <P CLASS="fl-dreieck-text-western">&#9658;</P>
+                                        </TD>
+                                        <TD WIDTH=16%>
+                                                <P CLASS="fl-h2-western"><FONT FACE="Verdana, sans-serif">Text
+                                                NR</FONT></P>
+                                        </TD>
+                                        <TD WIDTH=12%>
+                                                <P CLASS="fl-text-western"><FONT FACE="Verdana, sans-serif">PERSON:</FONT></P>
+                                        </TD>
+                                        <TD WIDTH=70%>
+                                                <P CLASS="fl-text-western"><FONT FACE="Verdana, sans-serif">DIALOGTEXT</FONT></P>
+                                        </TD>
+                                </TR>
+<!--           /Dialogsatz                      -->
+                                <TR VALIGN=TOP>
+                                        <TD WIDTH=2%>
+                                                <P CLASS="western">&nbsp;</P>
+                                        </TD>
+                                        <TD WIDTH=16%>
+                                                <P CLASS="western">&nbsp;</P>
+                                        </TD>
+                                        <TD WIDTH=12%>
+                                                <P CLASS="fl-text-western"><FONT FACE="Verdana, sans-serif">PERSON:</FONT></P>
+                                        </TD>
+                                        <TD WIDTH=70%>
+                                                <P CLASS="fl-text-western"><FONT FACE="Verdana, sans-serif">DIALOGTEXT</FONT></P>
+                                        </TD>
+                                </TR>
+                        </TABLE>
+                        <P CLASS="fl-dreieck-text-western"><BR><BR>
+                        </P>
+                </TD>
+        </TR>
+<!-- /Textabschnitt      -->
+</TABLE>
