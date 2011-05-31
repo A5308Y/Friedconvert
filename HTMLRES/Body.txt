@@ -1,0 +1,22 @@
+<!--  Abstand-->
+        <TR VALIGN=TOP>
+                <TD WIDTH=11 BGCOLOR="###COLOR###">
+                        <P CLASS="western" STYLE="margin-bottom: 0cm; color: #000000"><BR>
+                        </P>
+                </TD>
+                <TD WIDTH=13>
+                        <P STYLE="margin-bottom: 0cm; color: #ff6699; page-break-before: auto">
+                        <BR>
+                        </P>
+                </TD>
+                <TD WIDTH=102>
+                        <P CLASS="fl-h3-western">
+                        </P>
+                </TD>
+                <TD WIDTH=546>
+                        <P CLASS="fl-text-western"><FONT SIZE=2><SPAN STYLE="font-style: normal">
+                        ###TEXT###
+                        </P>
+                </TD>
+        </TR>
+<!-- /Abstand -->

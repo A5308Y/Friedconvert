@@ -1,0 +1,60 @@
+<!-- 3col -->
+
+        <TR VALIGN=TOP>
+                <TD WIDTH=11 HEIGHT=1 BGCOLOR="#ff6699">
+                        <P CLASS="western" STYLE="margin-bottom: 0cm; color: #000000"><BR>
+                        </P>
+                </TD>
+                <TD WIDTH=13>
+                        <P STYLE="margin-bottom: 0cm; color: #ff6699; page-break-before: auto">
+                        <BR>
+                        </P>
+                </TD>
+                <TD COLSPAN=2 WIDTH=648>
+                        <TABLE WIDTH=100% BORDER=0 CELLPADDING=0 CELLSPACING=0 STYLE="page-break-before: auto; page-break-after: auto">
+                                <COL WIDTH=40*>
+                                <COL WIDTH=113*>
+                                <COL WIDTH=103*>
+                                <TR VALIGN=TOP>
+                                        <TD WIDTH=16% HEIGHT=16>
+                                                <P CLASS="fl-text-eingerueckt2-western"><FONT FACE="Verdana, sans-serif">geben:</FONT></P>
+                                        </TD>
+                                        <TD WIDTH=44%>
+                                                <P CLASS="fl-text-western" STYLE="font-style: normal"><FONT FACE="Verdana, sans-serif"><FONT SIZE=2>A-B
+                                                ###_LL_LABEL_LESSON14_ITEM28###</FONT></FONT></P>
+                                        </TD>
+                                        <TD WIDTH=40%>
+                                                <P CLASS="fl-text-western"><FONT FACE="Verdana, sans-serif">A
+                                                gibt B ein Buch/X       </FONT></P>
+                                        </TD>
+                                </TR>
+                                <TR VALIGN=TOP>
+                                        <TD WIDTH=16% HEIGHT=16>
+                                                <P CLASS="fl-text-eingerueckt2-western">&nbsp;</P>
+                                        </TD>
+                                        <TD WIDTH=44%>
+                                                <P CLASS="fl-text-western">&nbsp;</P>
+                                        </TD>
+                                        <TD WIDTH=40%>
+                                                <P CLASS="fl-text-western"><FONT FACE="Verdana, sans-serif">A/X
+                                                =&gt; B/X</FONT></P>
+                                        </TD>
+                                </TR>
+                                <TR VALIGN=TOP>
+                                        <TD WIDTH=16% HEIGHT=16>
+                                                <P CLASS="fl-text-eingerueckt2-western">&nbsp;</P>
+                                        </TD>
+                                        <TD WIDTH=44%>
+                                                <P CLASS="fl-text-western">&nbsp;</P>
+                                        </TD>
+                                        <TD WIDTH=40%>
+                                                <P CLASS="fl-text-western"><FONT FACE="Verdana, sans-serif">X
+                                                von A zu B</FONT></P>
+                                        </TD>
+                                </TR>
+                            </TABLE>
+                        <P CLASS="fl-h3-western"><BR><BR>
+                        </P>
+                </TD>
+        </TR>
+<!-- /3col -->

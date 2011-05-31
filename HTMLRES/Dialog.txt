@@ -1,0 +1,34 @@
+<!--Textabschnitt: Dialog  (Mit Tabelle)-->
+        <TR VALIGN=TOP>
+                <TD WIDTH=11 BGCOLOR="#0099cc">
+                        <P CLASS="western" STYLE="margin-bottom: 0cm; color: #000000">&nbsp;</P>
+                </TD>
+                <TD COLSPAN=3 WIDTH=661>
+                        <TABLE WIDTH=100% BORDER=0 CELLPADDING=0 CELLSPACING=0>
+                                <COL WIDTH=5*>
+                                <COL WIDTH=40*>
+                                <COL WIDTH=31*>
+                                <COL WIDTH=180*>
+<!--            Dialogsatz einer Person                      -->
+                                <TR VALIGN=TOP>
+                                        <TD WIDTH=2%>
+                                                <P CLASS="fl-dreieck-text-western">&#9658;</P>
+                                        </TD>
+                                        <TD WIDTH=16%>
+                                                <P CLASS="fl-h2-western"><FONT FACE="Verdana, sans-serif">Text
+                                                NR</FONT></P>
+                                        </TD>
+                                        <TD WIDTH=12%>
+                                                <P CLASS="fl-text-western"><FONT FACE="Verdana, sans-serif">PERSON:</FONT></P>
+                                        </TD>
+                                        <TD WIDTH=70%>
+                                                <P CLASS="fl-text-western"><FONT FACE="Verdana, sans-serif">DIALOGTEXT</FONT></P>
+                                        </TD>
+                                </TR>
+<!--           /Dialogsatz                      -->
+                        </TABLE>
+                        <P CLASS="fl-dreieck-text-western"><BR><BR>
+                        </P>
+                </TD>
+        </TR>
+<!-- /Textabschnitt      -->
