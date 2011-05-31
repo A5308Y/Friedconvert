@@ -1,0 +1,19 @@
+
+### THIS WAS A TRY TO CONSERVE THE LIBREOFFICE GENERATED HTML CODE. NOW THE HTML IS COMPLETELY
+### CREATED ANEW
+
+##Nur noch Zeilenumbrüche scheinen das Problem zu sein!
+
+#### -> Problem: Die "#"'en sind in vielen Fällen vom Text durch Tags getrennt.
+#### -> Lösungsidee: Snippets und Text einzeln wieder zusammensetzen, wie ich's oben auch auseinandergenommen hab.
+
+#def replacehash(snippetlist, taglist):
+#for i in xrange(len(snippetlist)):
+#a = 1
+#snippetchain_forward = snippetlist[i]
+#snippetchain_backward = snippetlist[i]
+#while ((snippetchain_forward).count("#") not in [0,2]) and a <= 3:
+##print snippetchain_forward, str(snippetchain_forward.count("#"))
+#snippetchain_forward = snippetchain_forward + snippetlist[i+a]
+#a += 1
+###########################
