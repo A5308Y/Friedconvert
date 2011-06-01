@@ -1,5 +1,9 @@
 TODO
 
-* mehrfaches Auftreten von Übersetzungen als Vokabeln kennzeichnen
-* Design des HTMLs (vor allem ein farbiger Streifen links nach den Überschriften im Word-Dokument)
-* Einsetzen der entsprechenden Platzhalter in die HTML Datei
+* Eintragen von Textabschnitten nach den Überschriften im OriginalHTML
+
+
+
+* Können alle Deutschen Bezeichnungen in fremdsprachlichen Abschnitten mit Anführungszeichen (statt kursiver Schrift) gekennzeichnet werden? (Es gibt beide Varianten in Lektion 14 (Infinitiv mit zu -> kursiv; doch -> in Anführungszeichen)
+Ansonsten kollidiert die Übersetzung der Sätze evtl. mit den Formatierungsmöglichkeiten.
+** Ja: Das muss ich auch noch umsetzen.
