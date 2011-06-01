@@ -21,6 +21,14 @@ colordic[u'\xdcbungen'] = "#0099cc"
 colordic[u'Fragen'] = "#0099cc"
 colordic[u'Aufgaben'] = "#0099cc"
 
+merkdic = {"Header":"merkzeichen-w.jpg", "Text": "merkzeichen-w.jpg"}
+merkdic["Wortschatz"] = "#merkzeichen-w.jpg"
+merkdic["Grammatik"] ="#merkzeichen-w.jpg"
+merkdic[u'\xdcbungen'] = "#merkzeichen-w.jpg"
+merkdic[u'Fragen'] = "#merkzeichen-w.jpg"
+merkdic[u'Aufgaben'] = "#merkzeichen-w.jpg"
+
+
 
 ###############################################################
 
@@ -56,6 +64,7 @@ class MyHTMLParser(HTMLParser):
             self.section = snippet
             self.snipdic["captionlist"].append(caption)
             snipsecdict[self.section] = ''
+            return
 
       snipsecdict[self.section] = snipsecdict[self.section] + snippet
       self.snipdic["sniplist"].append(snippet)
@@ -67,38 +76,50 @@ class Dehasher(object):
   def dehash(self, sniptext):
     ###Search for the text in between the "#"'s (every odd snippet), clear the formatting
     ###and store all snippets in a list.
-    outsnips = [sanitize_snippet(sniptext.split("#")[0], True)]
+    outsnips = []
     insnips = []
-    
-    for i in range((sniptext.count("#"))/2): #wenn das gleich null ist, kein Durchlauf...
+    if sniptext.count("#") == 0:
+      outsnips = [sanitize_snippet(sniptext.split("#")[0], True)]
+    else:
+      for i in range((sniptext.count("#"))/2): #wenn das gleich null ist, kein Durchlauf...
 
-      if i != 0:
-        outsnippet = sniptext.split("#")[2*i]
-        outsnippet = sanitize_snippet(outsnippet, True)
-        if outsnippet !='':
-          outsnips.append(outsnippet)
-      
-      insnippet = sniptext.split("#")[2*i+1]
-      insnippet = sanitize_snippet(insnippet, False)
+        if i != 0:
+          outsnippet = sniptext.split("#")[2*i]
+          outsnippet = sanitize_snippet(outsnippet, True)
+          if outsnippet !='':
+            outsnips.append(outsnippet)
 
-      if insnippet != '':
-        insnips.append(insnippet)
+        insnippet = sniptext.split("#")[2*i+1]
+        insnippet = sanitize_snippet(insnippet, False)
+
+        if insnippet != '':
+          insnips.append(insnippet)
+### Um den letzten Abschnitt außerhalb der #'s im Text zu haben...
+    outsnippet = sniptext.split("#")[-1]
+    outsnippet = sanitize_snippet(outsnippet, True)
+    if outsnippet !='':
+      outsnips.append(outsnippet)
+####
 
     return {"outsnips": outsnips, "insnips":insnips}
+
 
   def rebuild(self, dehashed_dict, section):
     ins = dehashed_dict["insnips"]
     outs = dehashed_dict["outsnips"]
     new_text = ''
     i=1
-    for snip in outs:
+    for snip in outs[1:-1]:
       new_text = new_text + snip
+      if len(ins) != 0:
+        new_text = new_text + "###_LL_LABEL_LESSON"+str(lesson_nr)+"_SECTION_"+section[0:3]+"_ITEM"+str(i)+"###"
+        i+=1
+    for snip in ins:
+      i-=1
       new_text = new_text + "###_LL_LABEL_LESSON"+str(lesson_nr)+"_SECTION_"+section[0:3]+"_ITEM"+str(i)+"###"
       i+=1
-    #for i in range(1, min(len(outs), len(ins))):
-      #new_text = new_text + outs[i]
-      #new_text = new_text + "###_LL_LABEL_LESSON"+str(lesson_nr)+"_SECTION_"+section[0:3]+"_ITEM"+str(i)+"###"
-    return new_text
+    new_text += outs[-1]
+    return new_text  ### Aufgaben fehlen
 
 
 #reads the Libre-Office-generated html and returns the whole text in utf-8
@@ -111,7 +132,7 @@ def read_html(html_file):
   input_file.close()
   return text
 
-          
+
 #Clears a line of HTML of some annoying symbols.
 
 def sanitize_snippet(snippet, onlytabs):
@@ -185,9 +206,24 @@ def write_html(snipdic):
     #print content
     dehasher = Dehasher()
     dehashed_dict = dehasher.dehash(content) #Beim Dehashing funktioniert was nicht
-    print dehashed_dict
     content = dehasher.rebuild(dehashed_dict, section)
     content = htmlize(content)
+
+    for vorlage in ["SectionTitle.txt"]:
+      vorfile = codecs.open(HTMLRES_Path + "/"+vorlage, 'r', "utf-8")
+      lines = vorfile.readlines()
+      vorfile.close()
+        #And write them in the new file, replacing ###TEXT### with the content
+      for line in lines:
+        line = line.replace("###TITLE###", section)
+        if "Text" in section:
+          line = line.replace("###COLOR###", colordic["Text"])
+          line = line.replace("###MERKFILE###", merkdic["Text"])
+        else:
+          line = line.replace("###COLOR###", colordic[section])
+          line = line.replace("###MERKFILE###", merkdic[section])
+
+        outfile.write(line)
 
     for vorlage in ["Body.txt"]:
       vorfile = codecs.open(HTMLRES_Path + "/"+vorlage, 'r', "utf-8")
