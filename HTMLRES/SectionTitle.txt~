@@ -9,19 +9,18 @@
                         </P>
                 </TD>
                 <TD COLSPAN=2 WIDTH=648>
-                        <P CLASS="fl-h2-western"><IMG SRC="fileadmin/deutschkurs/###merkzeichenfile###" NAME="Grafik4" ALIGN=BOTTOM WIDTH=100 HEIGHT=106 BORDER=0></P>
+                        <P CLASS="fl-h2-western"><IMG SRC="fileadmin/deutschkurs/###MERKFILE###" NAME="Grafik4" ALIGN=BOTTOM WIDTH=100 HEIGHT=106 BORDER=0></P>
                 </TD>
         </TR>
 <!--/Merkzeichen  -->
 <!--  Ueberschrift-->
         <TR VALIGN=TOP>
                 <TD WIDTH=11 BGCOLOR="###COLOR###">
-                        <P CLASS="western" STYLE="margin-bottom: 0cm; color: #000000"><BR>
-                        </P>
+                      <P CLASS="western" STYLE="margin-bottom: 0cm; color: #000000"><BR>
+                      </P>
                 </TD>
                 <TD WIDTH=13>
-                        <P CLASS="western" STYLE="margin-bottom: 0cm; color: #000000"><BR>
-                        </P>
+                        <P CLASS="fl-dreieck-text-western; color: ###COLOR###"><FONT COLOR=###COLOR###>&#9658;</FONT></P>
                 </TD>
                 <TD WIDTH=102>
                         <P CLASS="fl-h2-western"><FONT FACE="Verdana, sans-serif">###TITLE###<BR></FONT><BR>

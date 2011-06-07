@@ -17,3 +17,50 @@
 #snippetchain_forward = snippetchain_forward + snippetlist[i+a]
 #a += 1
 ###########################
+
+
+
+def snippetize(text):
+  # Seperating the html_tags and the actual text. Then recreate the whole text without formatting
+  # and store the captions and tags.
+  snippettext = ''
+  captionlist = []
+  htmltaglist = []
+  snippetlist = []
+
+  snipseclist = []
+
+  snipsecdict= {}
+  section = "Header"
+  snipsecdict[section] = ''
+
+
+  for i in xrange(text.count("<")+1):
+    htmltag = text.split("<")[i].split(">")[0] #returns the htmltag
+    htmltaglist.append(htmltag)
+
+    snippet = text.split(">")[i].split("<")[0] #retruns the text between the htmltags
+
+    ###ABER ES GIBT ZWEI TAG PRO SNIPPET!!!
+
+    if capture_caption(htmltag, snippet): # if a new caption is found
+      section=capture_caption(htmltag, snippet)
+      captionlist.append(section)
+      snipsecdict[section] = ''
+
+    snippetlist.append(snippet)
+    snipseclist.append((snippet, section)) #to have a connection between lines and their section
+    snippettext = snippettext + snippet
+
+    snipsecdict[section] += snippet
+
+  if snippettext.count("#")%(2) != 0:
+    print "Odd number of '#'-Symbols. That's not good!"
+
+  returndict = {"sniptext": snippettext, "sniplist": snippetlist,}
+  returndict["captionlist"] = captionlist
+  returndict["taglist"] = htmltaglist
+  returndict["snipseclist"] = snipseclist
+  returndict["snipsecdict"] = snipsecdict
+
+  return returndict

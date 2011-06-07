@@ -5,6 +5,12 @@
 
 lesson_nr = 15
 
+global label_nr
+global inlist
+
+inlist = []
+label_nr = 1
+
 PATH = "../lek"+str(lesson_nr)+"/"
 
 OUTFILE = PATH+"lek"+str(lesson_nr)+"_LL.html"
@@ -22,18 +28,18 @@ colordic[u'Fragen'] = "#0099cc"
 colordic[u'Aufgaben'] = "#0099cc"
 
 merkdic = {"Header":"merkzeichen-w.jpg", "Text": "merkzeichen-w.jpg"}
-merkdic["Wortschatz"] = "#merkzeichen-w.jpg"
-merkdic["Grammatik"] ="#merkzeichen-w.jpg"
-merkdic[u'\xdcbungen'] = "#merkzeichen-w.jpg"
-merkdic[u'Fragen'] = "#merkzeichen-w.jpg"
-merkdic[u'Aufgaben'] = "#merkzeichen-w.jpg"
+merkdic["Wortschatz"] = "merkzeichen-w.jpg"
+merkdic["Grammatik"] ="merkzeichen-w.jpg"
+merkdic[u'\xdcbungen'] = "merkzeichen-w.jpg"
+merkdic[u'Fragen'] = "merkzeichen-w.jpg"
+merkdic[u'Aufgaben'] = "merkzeichen-w.jpg"
 
 
 
 ###############################################################
 
 
-import codecs
+import codecs, os
 from HTMLParser import HTMLParser
 
 class MyHTMLParser(HTMLParser):
@@ -61,7 +67,7 @@ class MyHTMLParser(HTMLParser):
         if sanitize_snippet(text, False) !=  '':
           if tagtext.count("H"+str(i)) == 1 :
             caption = sanitize_snippet(text, False)
-            self.section = snippet
+            self.section = sanitize_snippet(snippet, False)
             self.snipdic["captionlist"].append(caption)
             snipsecdict[self.section] = ''
             return
@@ -73,56 +79,50 @@ class Dehasher(object):
   def __init__(self):
     pass
 
-  def dehash(self, sniptext):
-    ###Search for the text in between the "#"'s (every odd snippet), clear the formatting
-    ###and store all snippets in a list.
+
+  def dehash(self, string):
     outsnips = []
     insnips = []
-    if sniptext.count("#") == 0:
-      outsnips = [sanitize_snippet(sniptext.split("#")[0], True)]
-    else:
-      for i in range((sniptext.count("#"))/2): #wenn das gleich null ist, kein Durchlauf...
-
-        if i != 0:
-          outsnippet = sniptext.split("#")[2*i]
-          outsnippet = sanitize_snippet(outsnippet, True)
-          if outsnippet !='':
-            outsnips.append(outsnippet)
-
-        insnippet = sniptext.split("#")[2*i+1]
-        insnippet = sanitize_snippet(insnippet, False)
-
-        if insnippet != '':
-          insnips.append(insnippet)
-### Um den letzten Abschnitt außerhalb der #'s im Text zu haben...
-    outsnippet = sniptext.split("#")[-1]
-    outsnippet = sanitize_snippet(outsnippet, True)
-    if outsnippet !='':
-      outsnips.append(outsnippet)
-####
-
+    i = 0
+    for snippet in string.split("#"):
+      sanitize_snippet(snippet, False)
+      if snippet != '':
+        if isodd(i):
+          insnips.append(snippet)
+        else:
+          outsnips.append(snippet)
+      i+=1
     return {"outsnips": outsnips, "insnips":insnips}
 
 
   def rebuild(self, dehashed_dict, section):
+    ##rebuilds a string from an outsnips-insnips dictionary, replacing the insnips with
+    ##a Label.
+    global label_nr
+    global inlist
     ins = dehashed_dict["insnips"]
+    inlist.extend(ins)
     outs = dehashed_dict["outsnips"]
     new_text = ''
     i=1
-    for snip in outs[1:-1]:
+    for snip in outs:
       new_text = new_text + snip
-      if len(ins) != 0:
-        new_text = new_text + "###_LL_LABEL_LESSON"+str(lesson_nr)+"_SECTION_"+section[0:3]+"_ITEM"+str(i)+"###"
+      if len(ins) != 0 and i != len(outs):
+        #new_text = new_text + "###_LL_LABEL_LESSON"+str(lesson_nr)+"_SECTION_"+section[0:3]+"_ITEM"+str(i)+"###"
+        new_text = new_text + "###_LL_LABEL_LESSON"+str(lesson_nr)+"_ITEM"+str(label_nr)+"###"
         i+=1
-    for snip in ins:
-      i-=1
-      new_text = new_text + "###_LL_LABEL_LESSON"+str(lesson_nr)+"_SECTION_"+section[0:3]+"_ITEM"+str(i)+"###"
-      i+=1
-    new_text += outs[-1]
-    return new_text  ### Aufgaben fehlen
+        label_nr +=1
+    return new_text  
 
 
 #reads the Libre-Office-generated html and returns the whole text in utf-8
+
+
+def isodd(number):
+  if number%2 ==0:
+    return False
+  else:
+    return True
 
 def read_html(html_file):
   input_file = codecs.open(html_file, 'r', "utf-8")
@@ -131,6 +131,12 @@ def read_html(html_file):
     text = text + line
   input_file.close()
   return text
+
+def write_sec_txt(content, section):
+  output_file = codecs.open(PATH+"lek"+str(lesson_nr)+"_"+section+".txt", 'w', "utf-8")
+  output_file.write(content)
+  output_file.close()
+    
 
 
 #Clears a line of HTML of some annoying symbols.
@@ -185,8 +191,9 @@ def write_html(snipdic):
 
   snipsecdict = snipdic["snipsecdict"]
   captionlist = snipdic["captionlist"]
+  lektitle = captionlist[0]
+  captionlist = captionlist[1:len(captionlist)]
   outfile = codecs.open(OUTFILE, 'w', "utf-8")
-
 
 #Write the Header
   #Read the lines of the different templates
@@ -197,17 +204,25 @@ def write_html(snipdic):
     #And write them in the new file, replacing ###TEXT### with the content
     for line in lines:
       line = line.replace("###COLOR###", colordic["Header"])
+      line = line.replace("###LEKNR###", 'Lektion '+str(lesson_nr))
+      line = line.replace("###LEKTITLE###", lektitle)
       outfile.write(line)
 
 
 #write the content
   for section in captionlist:
-    content = snipsecdict[section]
-    #print content
-    dehasher = Dehasher()
-    dehashed_dict = dehasher.dehash(content) #Beim Dehashing funktioniert was nicht
-    content = dehasher.rebuild(dehashed_dict, section)
-    content = htmlize(content)
+    #if osPATH+"lek"+str(lesson_nr)+"_"+section+".txt":
+
+    try:
+      f = open(PATH+"lek"+str(lesson_nr)+"_"+section+".txt")
+      content = f.read()
+    except IOError:
+      content = snipsecdict[section]
+      dehasher = Dehasher()
+      dehashed_dict = dehasher.dehash(content)
+      content = dehasher.rebuild(dehashed_dict, section)
+      content = htmlize(content)
+      write_sec_txt(content, section)
 
     for vorlage in ["SectionTitle.txt"]:
       vorfile = codecs.open(HTMLRES_Path + "/"+vorlage, 'r', "utf-8")
@@ -215,13 +230,18 @@ def write_html(snipdic):
       vorfile.close()
         #And write them in the new file, replacing ###TEXT### with the content
       for line in lines:
-        line = line.replace("###TITLE###", section)
+        line = line.replace("###TITLE###", htmlize(section))
         if "Text" in section:
           line = line.replace("###COLOR###", colordic["Text"])
           line = line.replace("###MERKFILE###", merkdic["Text"])
         else:
-          line = line.replace("###COLOR###", colordic[section])
-          line = line.replace("###MERKFILE###", merkdic[section])
+          #try:
+            line = line.replace("###COLOR###", colordic[section])
+            line = line.replace("###MERKFILE###", merkdic[section])
+          #except:
+            #line = line.replace("###COLOR###", "#000066")
+            #line = line.replace("###MERKFILE###", "merkzeichen-w.jpg")
+            
 
         outfile.write(line)
 
@@ -235,7 +255,10 @@ def write_html(snipdic):
         if "Text" in section:
           line = line.replace("###COLOR###", colordic["Text"])
         else:
-          line = line.replace("###COLOR###", colordic[section])
+          try:
+            line = line.replace("###COLOR###", colordic[section])
+          except:
+            line = line.replace("###COLOR###", "#000066")
           
         outfile.write(line)
 
@@ -254,21 +277,17 @@ def write_xml(sniplist):
   ##This is how an entry in the XML should look like:
   ##'<label index="label_lesson14_item1">phrases before the statement</label>'
   output_file = codecs.open(XMLFILE, 'w', "utf-8")
-  for item_nr in range(1, len(sniplist)):
-    output_file.write('<label index="label_lesson_'+str(lesson_nr)+'_item'+str(item_nr)+'">'+sniplist[item_nr]+'</label>\n')
+  for item_nr in range(len(sniplist)):
+    output_file.write('<label index="label_lesson_'+str(lesson_nr)+'_item'+str(item_nr+1)+'">'+sniplist[item_nr]+'</label>\n')
   output_file.close()
 
+os.system('soffice -accept="socket,port=8100;urp;"')
+os.system('python DocumentConverter.py E-lek-'+str(lesson_nr)+'* lek'+str(lesson_nr)+'.html')
 
-    
-    
 parser = MyHTMLParser()
 dehasher = Dehasher()
 
 parser.feed(read_html(SRCFILE))
 snipdic = parser.snipdic
 write_html(snipdic)
-
-#snipdic = snippetize(read_html(SRCFILE))
-#dehashed_dict = dehasher.dehash(snipdic["sniptext"])
-#write_html(rebuild(dehashed_dict))
-#write_xml(dehashed_dict["insnips"])
+write_xml(inlist)

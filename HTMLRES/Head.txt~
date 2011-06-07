@@ -70,7 +70,7 @@
                 </TD>
         </TR>
 <!--/Lektionsbetitelung-->
-<!-- Großes Bild (Lektionstitelbild) -->
+<!-- Bild (Lektionstitelbild) -->
         <TR VALIGN=TOP>
                 <TD WIDTH=11 BGCOLOR="#0099cc">
                         <P CLASS="western" STYLE="margin-bottom: 0cm; color: #000000">&nbsp;</P>
@@ -85,4 +85,4 @@
                         <P CLASS="western" STYLE="margin-bottom: 0cm; color: #000000"><FONT COLOR="#000000"><IMG SRC="fileadmin/deutschkurs/lektion-14_text53.jpg" NAME="Grafik2" ALIGN=BOTTOM WIDTH=350 HEIGHT=298 BORDER=0></FONT></P>
                 </TD>
         </TR>
-<!-- /Großes Bild  -->
+<!-- /Bild  -->
