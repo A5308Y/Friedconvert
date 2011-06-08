@@ -96,3 +96,17 @@ def snippetize(text):
 ####
 
     return {"outsnips": outsnips, "insnips":insnips}
+
+
+#def capture_caption(html_tag, snippet):
+  ##Checks if a snippet is a Heading by searching its HTML_Tag for H#
+  ##stores it in a given list and returns the caption
+  #for i in xrange(10):
+    #snippet = sanitize_snippet(snippet, False)
+    #if html_tag.count("H"+str(i)) == 1 and snippet!='':
+      #caption = snippet
+      #return caption
+    #elif html_tag.count("H"+str(i)) > 1:
+      #pass
+      ##print "SOMETHINGS WRONG!!!! with the Caption tags. Search for \"H"+str(i)+"\" "
+       ###Da müssen noch die Style Vorgaben für Hx ausgeblendet werden...  

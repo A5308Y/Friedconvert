@@ -1,9 +1,44 @@
 TODO
 
-* Eintragen von Textabschnitten nach den Überschriften im OriginalHTML
-
-
-
 * Können alle Deutschen Bezeichnungen in fremdsprachlichen Abschnitten mit Anführungszeichen (statt kursiver Schrift) gekennzeichnet werden? (Es gibt beide Varianten in Lektion 14 (Infinitiv mit zu -> kursiv; doch -> in Anführungszeichen)
 Ansonsten kollidiert die Übersetzung der Sätze evtl. mit den Formatierungsmöglichkeiten.
 ** Ja: Das muss ich auch noch umsetzen.
+
+* Rückmeldung von Küpper
+
+* Erzeugung EINER XML-Datei mit aus allen Sprachen und Lektionen.
+
+* HTML4-Standard für Lektion 15 erreichen.
+
+* Auf einheitliche CSS-Datei beziehen.
+
+* Formatierung von Inhalten der Lektion 1
+* Formatierung von Inhalten der Lektion 2
+* Formatierung von Inhalten der Lektion 3
+* Formatierung von Inhalten der Lektion 4
+* Formatierung von Inhalten der Lektion 5
+* Formatierung von Inhalten der Lektion 6
+* Formatierung von Inhalten der Lektion 7
+* Formatierung von Inhalten der Lektion 8
+* Formatierung von Inhalten der Lektion 9
+* Formatierung von Inhalten der Lektion 10
+* Formatierung von Inhalten der Lektion 11
+* Formatierung von Inhalten der Lektion 12
+* Formatierung von Inhalten der Lektion 13
+* Formatierung von Inhalten der Lektion 14
+* Formatierung von Inhalten der Lektion 15
+* Formatierung von Inhalten der Lektion 16
+* Formatierung von Inhalten der Lektion 17
+* Formatierung von Inhalten der Lektion 18
+* Formatierung von Inhalten der Lektion 19
+* Formatierung von Inhalten der Lektion 20
+* Formatierung von Inhalten der Lektion 21
+* Formatierung von Inhalten der Lektion 22
+* Formatierung von Inhalten der Lektion 23
+* Formatierung von Inhalten der Lektion 24
+* Formatierung von Inhalten der Lektion 25
+* Formatierung von Inhalten der Lektion 26
+* Formatierung von Inhalten der Lektion 27
+* Formatierung von Inhalten der Lektion 28
+* Formatierung von Inhalten der Lektion 29
+* Formatierung von Inhalten der Lektion 30

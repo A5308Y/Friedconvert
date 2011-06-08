@@ -64,3 +64,35 @@ def snippetize(text):
   returndict["snipsecdict"] = snipsecdict
 
   return returndict
+
+
+  def dehashold(self, sniptext):
+    ###Search for the text in between the "#"'s (every odd snippet), clear the formatting
+    ###and store all snippets in a list.
+    outsnips = []
+    insnips = []
+    if sniptext.count("#") == 0:
+      outsnips = [sanitize_snippet(sniptext.split("#")[0], True)]
+    else:
+      for i in range((sniptext.count("#"))/2): #wenn das gleich null ist, kein Durchlauf...
+
+        if i != 0:
+          outsnippet = sniptext.split("#")[2*i]
+          outsnippet = sanitize_snippet(outsnippet, True)
+          if outsnippet !='':
+            outsnips.append(outsnippet)
+
+        insnippet = sniptext.split("#")[2*i+1]
+        insnippet = sanitize_snippet(insnippet, False)
+
+        if insnippet != '':
+          insnips.append(insnippet)
+
+### Um den letzten Abschnitt außerhalb der #'s im Text zu haben...
+    outsnippet = sniptext.split("#")[-1]
+    outsnippet = sanitize_snippet(outsnippet, True)
+    if outsnippet !='':
+      outsnips.append(outsnippet)
+####
+
+    return {"outsnips": outsnips, "insnips":insnips}
