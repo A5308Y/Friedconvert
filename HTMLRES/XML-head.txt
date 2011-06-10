@@ -5,4 +5,3 @@
     <type>module</type>
   </meta>
   <data type="array">
-    <languageKey index="default" type="array">
