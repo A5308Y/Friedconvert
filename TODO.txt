@@ -1,44 +1,105 @@
-TODO
+FRAGEN:
+  * Können alle Deutschen Bezeichnungen in fremdsprachlichen Abschnitten mit Anführungszeichen (statt kursiver Schrift) gekennzeichnet werden? (Es gibt beide Varianten in Lektion 14 (Infinitiv mit zu -> kursiv; doch -> in Anführungszeichen)
+  Ansonsten kollidiert die Übersetzung der Sätze evtl. mit den Formatierungsmöglichkeiten.
+  ** Ja: Das muss ich auch noch umsetzen.
 
-* Können alle Deutschen Bezeichnungen in fremdsprachlichen Abschnitten mit Anführungszeichen (statt kursiver Schrift) gekennzeichnet werden? (Es gibt beide Varianten in Lektion 14 (Infinitiv mit zu -> kursiv; doch -> in Anführungszeichen)
-Ansonsten kollidiert die Übersetzung der Sätze evtl. mit den Formatierungsmöglichkeiten.
-** Ja: Das muss ich auch noch umsetzen.
+  * Fremdsprachliche Tabellen
 
-* Rückmeldung von Küpper
+  * Gibt es noch neuere Versionen der doc-Dateien mit sorgfältiger Kennzeichnung per #?
 
-* Erzeugung EINER XML-Datei mit aus allen Sprachen und Lektionen.
+  *
 
+
+TODOS IN REIHENFOLGE:
+
+  * Inhaltsdateien nur einmal erstellen ("Texto.txt" abschaffen)
+  * Auf einheitliche CSS-Datei beziehen.
+  * Richtiges Handling von Lektions-Überschriften
+  * Automatisiertes Handling von Wortschatz (mit Tabs?)??
+
+GLEICHE LABEL ANZAHL FÜR ALLE SPRACHEN
+  * Testcase schreiben: Gleiche Anzahl von Labels pro Lektion in allen Sprachen
+  * Alle Sprachen von Fr. Schmidt anfordern
+
+ÜBERSCHRIFTEN UND #
+  BESCHREIBUNG
+    * richtiges Setzen von Überschriften pro Doc Datei im Englischen (abgehakt)
+    * richtiges Setzen von '#' pro Doc Datei
+  WORKFLOW
+    für englische Version:
+      * Libre Office Navigator (F5) öffnen und Überschriften durchgehen und ggbf. abändern
+      * Dabei Unterüberschriften von Wortschatz mit Heading 5 kennzeichnen
+    für alle Versionen:
+      * friedpars für die passende Lektion aufrufen
+      * Überprüfung des Textes auf fremdsprachliche Anteile
+      * setzen von # an den entsprechenden Stellen
+      * Löschen der vorhandenen Inhalts-Dateien nicht vergessen
+
+    
+  TODO
+    * Überschriften und # bei der Lektion 1
+    * Überschriften und # bei der Lektion 2
+    * Überschriften und # bei der Lektion 3
+    * Überschriften und # bei der Lektion 4
+    * Überschriften und # bei der Lektion 5
+    * Überschriften und # bei der Lektion 6
+    * Überschriften und # bei der Lektion 7
+    * Überschriften und # bei der Lektion 8
+    * Überschriften und # bei der Lektion 9
+    * Überschriften und # bei der Lektion 10
+    * Überschriften und # bei der Lektion 11
+    * Überschriften und # bei der Lektion 12
+    * Überschriften und # bei der Lektion 13
+    * Überschriften und # bei der Lektion 14
+    * Überschriften und # bei der Lektion 15
+    * Überschriften und # bei der Lektion 16
+    * Überschriften und # bei der Lektion 17
+    * Überschriften und # bei der Lektion 18
+    * Überschriften und # bei der Lektion 19
+    * Überschriften und # bei der Lektion 20
+    * Überschriften und # bei der Lektion 21
+    * Überschriften und # bei der Lektion 22
+    * Überschriften und # bei der Lektion 23
+    * Überschriften und # bei der Lektion 24
+    * Überschriften und # bei der Lektion 25
+    * Überschriften und # bei der Lektion 26
+    * Überschriften und # bei der Lektion 27
+    * Überschriften und # bei der Lektion 28
+    * Überschriften und # bei der Lektion 29
+    * Überschriften und # bei der Lektion 30
+
+* Formatierungen von Lektion 15 wieder einbauen.
 * HTML4-Standard für Lektion 15 erreichen.
 
-* Auf einheitliche CSS-Datei beziehen.
+FORMATIERUNG VON INHALTEN
 
-* Formatierung von Inhalten der Lektion 1
-* Formatierung von Inhalten der Lektion 2
-* Formatierung von Inhalten der Lektion 3
-* Formatierung von Inhalten der Lektion 4
-* Formatierung von Inhalten der Lektion 5
-* Formatierung von Inhalten der Lektion 6
-* Formatierung von Inhalten der Lektion 7
-* Formatierung von Inhalten der Lektion 8
-* Formatierung von Inhalten der Lektion 9
-* Formatierung von Inhalten der Lektion 10
-* Formatierung von Inhalten der Lektion 11
-* Formatierung von Inhalten der Lektion 12
-* Formatierung von Inhalten der Lektion 13
-* Formatierung von Inhalten der Lektion 14
-* Formatierung von Inhalten der Lektion 15
-* Formatierung von Inhalten der Lektion 16
-* Formatierung von Inhalten der Lektion 17
-* Formatierung von Inhalten der Lektion 18
-* Formatierung von Inhalten der Lektion 19
-* Formatierung von Inhalten der Lektion 20
-* Formatierung von Inhalten der Lektion 21
-* Formatierung von Inhalten der Lektion 22
-* Formatierung von Inhalten der Lektion 23
-* Formatierung von Inhalten der Lektion 24
-* Formatierung von Inhalten der Lektion 25
-* Formatierung von Inhalten der Lektion 26
-* Formatierung von Inhalten der Lektion 27
-* Formatierung von Inhalten der Lektion 28
-* Formatierung von Inhalten der Lektion 29
-* Formatierung von Inhalten der Lektion 30
+  * Formatierung von Inhalten der Lektion 1
+  * Formatierung von Inhalten der Lektion 2
+  * Formatierung von Inhalten der Lektion 3
+  * Formatierung von Inhalten der Lektion 4
+  * Formatierung von Inhalten der Lektion 5
+  * Formatierung von Inhalten der Lektion 6
+  * Formatierung von Inhalten der Lektion 7
+  * Formatierung von Inhalten der Lektion 8
+  * Formatierung von Inhalten der Lektion 9
+  * Formatierung von Inhalten der Lektion 10
+  * Formatierung von Inhalten der Lektion 11
+  * Formatierung von Inhalten der Lektion 12
+  * Formatierung von Inhalten der Lektion 13
+  * Formatierung von Inhalten der Lektion 14
+  * Formatierung von Inhalten der Lektion 15
+  * Formatierung von Inhalten der Lektion 16
+  * Formatierung von Inhalten der Lektion 17
+  * Formatierung von Inhalten der Lektion 18
+  * Formatierung von Inhalten der Lektion 19
+  * Formatierung von Inhalten der Lektion 20
+  * Formatierung von Inhalten der Lektion 21
+  * Formatierung von Inhalten der Lektion 22
+  * Formatierung von Inhalten der Lektion 23
+  * Formatierung von Inhalten der Lektion 24
+  * Formatierung von Inhalten der Lektion 25
+  * Formatierung von Inhalten der Lektion 26
+  * Formatierung von Inhalten der Lektion 27
+  * Formatierung von Inhalten der Lektion 28
+  * Formatierung von Inhalten der Lektion 29
+  * Formatierung von Inhalten der Lektion 30

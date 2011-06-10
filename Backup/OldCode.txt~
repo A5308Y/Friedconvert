@@ -96,3 +96,101 @@ def snippetize(text):
 ####
 
     return {"outsnips": outsnips, "insnips":insnips}
+
+
+#def capture_caption(html_tag, snippet):
+  ##Checks if a snippet is a Heading by searching its HTML_Tag for H#
+  ##stores it in a given list and returns the caption
+  #for i in xrange(10):
+    #snippet = sanitize_snippet(snippet, False)
+    #if html_tag.count("H"+str(i)) == 1 and snippet!='':
+      #caption = snippet
+      #return caption
+    #elif html_tag.count("H"+str(i)) > 1:
+      #pass
+      ##print "SOMETHINGS WRONG!!!! with the Caption tags. Search for \"H"+str(i)+"\" "
+       ###Da müssen noch die Style Vorgaben für Hx ausgeblendet werden...
+
+#HTMLIZE
+  #content = content.replace("\n", "<br>")
+  #content = content.replace(unichr(252), "&uuml;")
+  #content = content.replace(unichr(246), "&ouml;")
+  #content = content.replace(unichr(214), "&Ouml;")
+  #content = content.replace(unichr(220), "&Uuml;")
+  #content = content.replace(unichr(223), "&szlig;")
+  #content = content.replace(unichr(228), "&auml;")
+  #content = content.replace(unichr(196), "&Auml;")
+
+  #content = content.replace(unichr(195169), "&eacute;")
+
+  #content = content.replace(unichr(194180), "\'")
+  #content = content.replace(unichr(8222), "\"")
+  #content = content.replace(unichr(8221), "\"")
+  #content = content.replace(unichr(8220), "\"")
+
+  #content = content.replace(unichr(8211), "-")
+  #content = content.replace(unichr(8212), "-")
+
+
+  #for vorlage in ["Head.txt"]:
+      #vorfile = codecs.open(HTMLRES_Path + "/"+vorlage, 'r', "utf-8")
+      #lines = vorfile.readlines()
+      #vorfile.close()
+      ##And write them in the new file, replacing ###TEXT### with the content
+    #for line in lines:
+      #line = line.replace("###COLOR###", colordic["Header"])
+      #line = line.replace("###LEKNR###", 'Lektion '+str(self.lesson_nr))
+      #line = line.replace("###LEKTITLE###", htmlize(lektitle))
+
+    #for vorlage in ["SectionTitle.txt"]:
+      #vorfile = codecs.open(HTMLRES_Path + "/"+vorlage, 'r', "utf-8")
+      #lines = vorfile.readlines()
+      #vorfile.close()
+        #And write them in the new file, replacing ###TEXT### with the content
+      #for line in lines:
+        #line = line.replace("###TITLE###", htmlize(section))
+        #if "Text" in section:
+          #line = line.replace("###COLOR###", colordic["Text"])
+          #line = line.replace("###MERKFILE###", merkdic["Text"])
+        #else:
+          #try:
+            #line = line.replace("###COLOR###", colordic[section])
+            #line = line.replace("###MERKFILE###", merkdic[section])
+          #except:
+            #line = line.replace("###COLOR###", "#000066")
+            #line = line.replace("###MERKFILE###", "merkzeichen-w.jpg")
+
+        #self.output += line
+
+        
+    #for vorlage in ["Body.txt"]:
+      #vorfile = codecs.open(HTMLRES_Path + "/"+vorlage, 'r', "utf-8")
+      #lines = vorfile.readlines()
+      #vorfile.close()
+        #And write them in the new file, replacing ###TEXT### with the content
+      #for line in lines:
+        #try:
+          #line = line.replace("###TEXT###", content) #content.decode('utf-8', errors='ignore')#CODEC PROBLEM!!!
+        #except UnicodeDecodeError:
+          #print content
+          #raise Error
+
+        #if "Text" in section:
+          #line = line.replace("###COLOR###", colordic["Text"])
+        #else:
+          #try:
+            #line = line.replace("###COLOR###", colordic[section])
+          #except:
+            #line = line.replace("###COLOR###", "#000066")
+        #self.output += line
+
+run
+  #dehasher = Dehasher()
+
+  #parser = MyHTMLParser()
+  #parser.feed(read_html(SRCFILE))
+  #snipdic = parser.snipdic
+  #writer = Writer(dehasher)
+  #writer.create_html(snipdic)
+  #writer.write_html()
+  #writer.write_xml(XMLFILE, dehasher.inlist)

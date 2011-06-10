@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<T3locallang>
+  <meta type="array">
+    <description>TMailform languages</description>
+    <type>module</type>
+  </meta>
+  <data type="array">
+    <languageKey index="default" type="array">    <languageKey index="en" type="array">
+      <label index="label_lesson_1_item1">Lesson</label>
+      <label index="label_lesson_1_item2">Text</label>
+      <label index="label_lesson_1_item3">Vocabulary</label>
+      <label index="label_lesson_1_item4">noun / nouns</label>
+      <label index="label_lesson_1_item5">verb / verbs</label>
+      <label index="label_lesson_1_item6">Adjective / Adjectivs</label>
+      <label index="label_lesson_1_item7">other words</label>
+      <label index="label_lesson_1_item8">phrases</label>
+      <label index="label_lesson_1_item9">Grammar</label>
+      <label index="label_lesson_1_item10">singular</label>
+      <label index="label_lesson_1_item11">plural</label>
+      <label index="label_lesson_1_item12">masculine</label>
+      <label index="label_lesson_1_item13">feminine</label>
+      <label index="label_lesson_1_item14">neuter</label>
+      <label index="label_lesson_1_item15">exercis / exercises</label>
+      <label index="label_lesson_1_item16">question / questions</label>
+      <label index="label_lesson_1_item17">task / tasks</label>
+      <label index="label_lesson_1_item18">Parts of speech</label>
+      <label index="label_lesson_1_item19">There are three important types of word in the German language 1. the noun= for objects, people, abstract concepts 2. the verb= for activities, processes in the broadest sense 3. the adjective= for characteristics   Other kinds of words complete the sentences.   The noun is written with a capital letter at the beginning. It is thus easy to recognise.   Nouns and adjectives are modified or declined in sentences = the declension.   The verb is the most difficult word because it can be very strongly modified.  It is conjugated = the conjugation. The conjugated verb is know as the finites Verb, the unconjugated verb is the Infinitiv.   We will begin with short sentences, which contain all three word types. We will especially observe the verb.</label>
+      <label index="label_lesson_1_item20">The verb sein = ist, sind</label>
+      <label index="label_lesson_1_item21">Negation with nicht</label>
+      <label index="label_lesson_1_item22">Pronouns</label>
+      <label index="label_lesson_1_item23">The pronouns represent people and things (objects/concepts).</label>
+      <label index="label_lesson_1_item24">Person</label>
+      <label index="label_lesson_1_item25">Person</label>
+      <label index="label_lesson_1_item26">Person or thing</label>
+      <label index="label_lesson_1_item27">People</label>
+      <label index="label_lesson_1_item28">People</label>
+      <label index="label_lesson_1_item29">People or things</label>
+      <label index="label_lesson_1_item30">Conjugation of verbs</label>
+      <label index="label_lesson_1_item31">The conjugation comprises the 1st, 2nd and 3rd person in the singular and the plural:</label>
+      <label index="label_lesson_1_item32">The interrogative pronouns was, wer</label>
+      <label index="label_lesson_1_item33">object</label>
+      <label index="label_lesson_1_item34">person</label>
+      <label index="label_lesson_1_item35">The sentence structure</label>
+      <label index="label_lesson_1_item36">In simple sentences the rule for the sequence of words is: the finite (conjugated) verb stands in the 2nd place in the sentence. Other parts of the sentence can change their positions. The subject (the active element) (in our example: Susi) stands in the 1st position, but can also change position with another part of the sentence.   1st position     2nd position  verbcomplement</label>
+      <label index="label_lesson_1_item37">Additional details are placed after the finite verb.   1st position     2nd position verb                 detail              complement</label>
+      <label index="label_lesson_1_item38">The structure of the interrogative sentence with interrogative pronouns</label>
+      <label index="label_lesson_1_item39">When the sentence begins with the interrogative pronoun, it stands in the 1st position. The finite verb stands in the 2nd position.           interrogative              pronounverb</label>
+      <label index="label_lesson_1_item40">The article of the noun</label>
+      <label index="label_lesson_1_item41">nominative               definite                indefinite        negative</label>
+      <label index="label_lesson_1_item42">The plural article is always the same: die &#8211; without article &#8211; keine.</label>
+      <label index="label_lesson_1_item43">Plural of the noun</label>
+      <label index="label_lesson_1_item44">The gender of the noun (der, die, das) and the plural form must be learned together with the word. Use a dictionary to help you. Please note: some words are formed in the plural with an Umlaut:</label>
+      <label index="label_lesson_1_item45">Plural words with adjectives</label>
+      <label index="label_lesson_1_item46">If an adjective is added to a noun, the plural form in simple sentences is always formed with an -e.</label>
+      <label index="label_lesson_1_item47">yes or no?</label>
+      <label index="label_lesson_1_item48">yes or no?</label>
+      <label index="label_lesson_1_item49">The finite verb stands in the 2nd position in simple sentences. Is this true? yes or no?</label>
+      <label index="label_lesson_1_item50">There are definite, indefinite, and positive articles. Is this true? yes or no?</label>
+      <label index="label_lesson_2_item1">The verb sein once more</label>
+      <label index="label_lesson_2_item2">Conjugation of verbs &#8211; Present tense / das Pr&#228;sens</label>
+      <label index="label_lesson_2_item3">Compare</label>
+      <label index="label_lesson_2_item4">The ending for the person is added to the root of the word (reis-, hei&#223;-, komm-, bitt-). For the 2nd ps. sg. the ending is -st. If the root ends in -s, -&#223;, s  is omitted in the 2nd ps. sg.; if the root ends in -t, e is added.</label>
+      <label index="label_lesson_2_item5">Names of countries</label>
+      <label index="label_lesson_2_item6">These are only partly regular. For example one says:</label>
+      <label index="label_lesson_2_item7">The nationalities of countries and cities</label>
+      <label index="label_lesson_2_item8">Compare:</label>
+      <label index="label_lesson_2_item9">The nationalities of countries</label>
+      <label index="label_lesson_2_item10">are partly regular. The male nationalities end in -er or -e  and the female almost always add   -in in the singular and -innen in the plural. Exception: for example die Deutsche. Sometimes there is an umlaut: England  Engl&#228;nder, Franzose  Franz&#246;sin.</label>
+      <label index="label_lesson_2_item11">The nationalities of cities</label>
+      <label index="label_lesson_2_item12">are always regular: the endings are -er for men and for women add -in to the male form. In the plural the female ending is -innen.</label>
+      <label index="label_lesson_2_item13">Questions without interrogative pronouns</label>
+      <label index="label_lesson_2_item14">In questions without interrogative pronouns the finite verb stands at the beginning of the    sentence.</label>
+      <label index="label_lesson_2_item15">The root of a word ends in -s.       In the 2nd person singular an -e is added. Is this true? Yes or no?</label>
+      <label index="label_lesson_2_item16">For the female form of a nationality -in is added to the masculine form. Is this true? Yes or no?</label>
+    </languageKey>
+    <languageKey index="sp" type="array">
+      <label index="label_lesson_1_item1">T&#233;rminos gramaticales</label>
+      <label index="label_lesson_1_item2">Unidad</label>
+      <label index="label_lesson_1_item3">Texto</label>
+      <label index="label_lesson_1_item4">Vocabulario</label>
+      <label index="label_lesson_1_item5">Substantivos</label>
+      <label index="label_lesson_1_item6">Verbos</label>
+      <label index="label_lesson_1_item7">Adjetivos</label>
+      <label index="label_lesson_1_item8">Otras palabras</label>
+      <label index="label_lesson_1_item9">Expresiones</label>
+      <label index="label_lesson_1_item10">Gram&#225;tica</label>
+      <label index="label_lesson_1_item11">Singular</label>
+      <label index="label_lesson_1_item12">Plural</label>
+      <label index="label_lesson_1_item13">masculino</label>
+      <label index="label_lesson_1_item14">feminino</label>
+      <label index="label_lesson_1_item15">neutro</label>
+      <label index="label_lesson_1_item16">Ejercicios</label>
+      <label index="label_lesson_1_item17">Preguntas</label>
+      <label index="label_lesson_1_item18">Ejercitaci&#243;n</label>
+      <label index="label_lesson_1_item19"></label>
+      <label index="label_lesson_1_item20"></label>
+      <label index="label_lesson_1_item21">SingularPlural                                     .             Deutsch ist schwer.   Das Wortist neu. Die W&#246;rter sind neu. Das Auto ist schnellDie Autos sind schnell.</label>
+      <label index="label_lesson_1_item22">Deutsch ist nicht schwer. Das Wort ist nicht neu.Die W&#246;rter sind nicht neu. Das Auto ist nicht schnell.Die Autos sind nicht schnell.</label>
+      <label index="label_lesson_1_item23"></label>
+      <label index="label_lesson_1_item24">Singular/Sg.:1. Personich=</label>
+      <label index="label_lesson_1_item25">2. Persondu=</label>
+      <label index="label_lesson_1_item26">3. Personer=</label>
+      <label index="label_lesson_1_item27">der Mann, der Baum sie =</label>
+      <label index="label_lesson_1_item28">die Frau, die Frage es  =</label>
+      <label index="label_lesson_1_item29">das Kind, das Wort      Plural/Pl.:1. Personwir        =</label>
+      <label index="label_lesson_1_item30">2. Personihr    =</label>
+      <label index="label_lesson_1_item31">3. Personsie        =</label>
+      <label index="label_lesson_1_item32">Conjugaci&#243;n de los verbos</label>
+      <label index="label_lesson_1_item33">Las formas de la 1a, 2a  y 3a  persona del singular y del plural:</label>
+      <label index="label_lesson_1_item34">Pronombres interrogativas was, wer</label>
+      <label index="label_lesson_1_item35">cosa</label>
+      <label index="label_lesson_1_item36">persona</label>
+      <label index="label_lesson_1_item37">La construcci&#243;n de la frase</label>
+      <label index="label_lesson_1_item38">En toda oraci&#243;n principal el verbo  conjugado se coloca en segundo lugar. Otras partes de la oraci&#243;n  pueden cambiar su posici&#243;n. El sujeto se coloca normalmente en primer lugar, sin embargo puede cambiar su posici&#243;n con otra parte de la oraci&#243;n.   1a Posici&#243;n2a Posici&#243;n Verbo_componentes</label>
+      <label index="label_lesson_1_item39">Complementos adicionales se colocan detr&#225;s del verbo conjugado.   1a Posici&#243;n2a Posici&#243;n VerboOtros componentes</label>
+      <label index="label_lesson_1_item40">La estructura de las oraciones interrogativas con pronombre interrogativo</label>
+      <label index="label_lesson_1_item41">La oraci&#243;n comienza con el pronombre interrogativa. El verbo conjugado se coloca en segundo lugar.   Pronombre interrogativoVerbo</label>
+      <label index="label_lesson_1_item42">El art&#237;culo del sustanivo</label>
+      <label index="label_lesson_1_item43">NominativoDeterminadoIndeterminadoNegativ</label>
+      <label index="label_lesson_1_item44">El art&#237;culo del plural es igual para todos los g&#233;neros: die &#8211; sin art&#237;culo &#8211; keine</label>
+      <label index="label_lesson_1_item45">El plural de los sustantivos</label>
+      <label index="label_lesson_1_item46">Es preciso aprender cada sustantivo con su g&#233;nero gramatical (der, die, das) y con la forma  plural. Utilice el diccionario.Observe la inflexi&#243;n voc&#225;lica en algunos casos (Umlaut):</label>
+      <label index="label_lesson_1_item47">Palabras en plural con adjetivos</label>
+      <label index="label_lesson_1_item48">Poniendo un adjetivo junto a un sustantivo y en caso de que el sustantivo no tenga art&#237;culo, la forma plural del adjetivo recibe la desinencia -e.</label>
+      <label index="label_lesson_1_item49">A&#241;ada las terminaciones a los verbos. Ejemplo:</label>
+      <label index="label_lesson_1_item50">Complete las frases con la forma correcta del verbo sein.   Ejemplo:</label>
+      <label index="label_lesson_1_item51">A&#241;ada las terminaciones  precisas a los verbos. Ejemplo:</label>
+      <label index="label_lesson_1_item52">Complete las preguntas con los pronombres interrogativos.   Ejemplo:</label>
+      <label index="label_lesson_1_item53">Complete las frases utilizando la forma correcta de la palabra entre par&#233;ntesis. Ejemplo:</label>
+      <label index="label_lesson_1_item54">Forme frases con la negaci&#243;n kein/e del sustantivo. Ejemplos:</label>
+      <label index="label_lesson_1_item55">Forme frases seg&#250;n el ejemplo. Ejemplo:</label>
+      <label index="label_lesson_1_item56">Si o No?</label>
+      <label index="label_lesson_1_item57">Si o  No?</label>
+      <label index="label_lesson_1_item58">En las oraciones principales, el verbo conjugado se coloca en segundo lugar. Si o No?</label>
+      <label index="label_lesson_1_item59">Hay art&#237;culos determinados, indeterminados y afirmativos. Si o No?</label>
+      <label index="label_lesson_2_item1">Otra vez el verbo sein</label>
+      <label index="label_lesson_2_item2">Conjugaci&#243;n de los verbos &#8211; el presente / das Pr&#228;sens</label>
+      <label index="label_lesson_2_item3">Comp&#225;rese:</label>
+      <label index="label_lesson_2_item4">A la ra&#237;z se le a&#241;ade la terminaci&#243;n para la persona. En caso de ra&#237;ces (hei&#223;-, komm-, bitt-) terminadas en -s/&#223;/z a la 2a persona del singular se le a&#241;ade -t en vez de -st.; en caso de ra&#237;ces terminadas en -t o -d se intercala  una -e entre ra&#237;z y las terminaciones -st y -t.</label>
+      <label index="label_lesson_2_item5">Nombres de pa&#237;ses</label>
+      <label index="label_lesson_2_item6">Pero existen peculiaridades.Se dice, por ejemplo:</label>
+      <label index="label_lesson_2_item7">Clasificaci&#243;n de personas por nacionalidades y por ciudades</label>
+      <label index="label_lesson_2_item8">Comp&#225;rese:</label>
+      <label index="label_lesson_2_item9">Clasificaci&#243;n de personas por nacionalidades</label>
+      <label index="label_lesson_2_item10">La formaci&#243;n de los sustantivos es, en parte, regular. Al nombrar personas masculinas los sustantivos terminan en -er o -e;  para nombrar personas femeninas se le a&#241;ade casi siempre --in en singular y -innen en plural. Excepci&#243;n: por ejemplo die Deutsche. En algunos casos hay una inflexi&#243;n voc&#225;lica: England  Engl&#228;nder, Franzose  Franz&#246;sin.</label>
+      <label index="label_lesson_2_item11">Clasificaci&#243;n de personas por ciudades</label>
+      <label index="label_lesson_2_item12">La formaci&#243;n de los sustantivos es regular. Las terminaciones siempre son -er y -erin. En plural las formas femeninas obtienen -innen.</label>
+      <label index="label_lesson_2_item13">Preguntas sin part&#237;culas interrogativas</label>
+      <label index="label_lesson_2_item14">En las oraciones interrogativas no introducidas por un pronombre o odverbio interrogativo, el verbo ocupa el primer lugar.</label>
+      <label index="label_lesson_2_item15">Complete las siguientes frases con la palabra adecuada y la terminaci&#243;n correcta.           Ejemplo:</label>
+      <label index="label_lesson_2_item16">Complete las siguientes frases con la palabra adecuada y la terminaci&#243;n correcta. Ejemplo:</label>
+      <label index="label_lesson_2_item17">Complete las siguientes frases con la palabra adecuada y la terminaci&#243;n correcta. Ejemplo:</label>
+      <label index="label_lesson_2_item18">Forme frases seg&#250;n el ejemplo. Ejemplo:</label>
+      <label index="label_lesson_2_item19">Busque las respuestas apropiadas.</label>
+      <label index="label_lesson_2_item20">A&#241;ada las terminaciones a los verbos. Ejemplo:</label>
+      <label index="label_lesson_2_item21">Una ra&#237;z termina en -s.     En la 2a persona del singular se le a&#241;ade -e.Si o No?</label>
+      <label index="label_lesson_2_item22">A una designaci&#243;n masculina se le a&#241;ade -in     para obtener la forma femenina. Si o No?</label>
+    </languageKey>
+  </data>
+</T3locallang>
