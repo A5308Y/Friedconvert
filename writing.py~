@@ -56,6 +56,7 @@ class Writer(object):
     text = read_html(self.HTMLRES_PATH +"/Body.txt")
     text = text.replace("###TEXT###", content)
     text = text.replace("###TITLE###", htmlize(section))
+    text = text.replace("###MERKFILE###", self.merkdic[section])
     if "Text" in section:
       text = text.replace("###COLOR###", self.colordic["Text"])
       text = text.replace("###MERKFILE###", self.merkdic["Text"])

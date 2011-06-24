@@ -3,9 +3,9 @@
 
 ################### CONFIG ############################
 
-languages = ["ru"]# ["en", "sp", "fr", "pl", "ru"] # ["en", "sp", "fr", "pl", "ru"]
-leclist = [25,16] #range(1,31) #[1,2]
-convert = True
+languages = ["en", "sp", "fr", "pl", "ru"]
+leclist = range(1,31) #[1,2]
+convert = False
 
 
 #HTML Templates and Colorcodes to use for the created html

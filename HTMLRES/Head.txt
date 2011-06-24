@@ -1,41 +1,19 @@
-<HTML>
-###DOCUMENT###
-<BODY LANG="de-DE" DIR="LTR">
-<TABLE WIDTH=672 BORDER=0 CELLPADDING=0 CELLSPACING=0 STYLE="page-break-before: auto; page-break-after: auto">
-        <COL WIDTH=11>
-        <COL WIDTH=13>
-        <COL WIDTH=102>
-        <COL WIDTH=546><!--/Lektionsbetitelung mit Merkzeichen -->
-        <TR>
-                <TD WIDTH=11 HEIGHT=38 VALIGN=TOP BGCOLOR="#000066">
-                        <P CLASS="western" STYLE="margin-bottom: 0cm; color: #000000">&nbsp;</P>
-                </TD>
-                <TD WIDTH=13 VALIGN=TOP>
-                        <P CLASS="western" STYLE="margin-bottom: 0cm; color: #000000">&nbsp;</P>
-                </TD>
-                <TD WIDTH=102 VALIGN=BOTTOM>
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN"
+        "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+<title>###LEKNR###</title>
+  <link rel="stylesheet" type="text/css" href="../formate.css">
+</head>
 
-                        <P CLASS="fl-h2-western"><IMG SRC="fileadmin/deutschkurs/merkzeichen-l.jpg" NAME="Grafik8" ALIGN=BOTTOM WIDTH=80 HEIGHT=109 BORDER=0></P>
-                        <P CLASS="fl-h2-western"><FONT FACE="Verdana, sans-serif">###LEKNR###</FONT></P>
-                </TD>
-                <TD WIDTH=546 VALIGN=BOTTOM>
-                        <P CLASS="fl-h1-western"><FONT FACE="Verdana, sans-serif">###LEKTITLE###</FONT></P>
-                </TD>
-        </TR>
-<!--/Lektionsbetitelung-->
-<!-- Bild (Lektionstitelbild) -->
-        <TR VALIGN=TOP>
-                <TD WIDTH=11 BGCOLOR="#0099cc">
-                        <P CLASS="western" STYLE="margin-bottom: 0cm; color: #000000">&nbsp;</P>
-                </TD>
-                <TD WIDTH=13>
-                        <P CLASS="western" STYLE="margin-bottom: 0cm; color: #000000">&nbsp;</P>
-                </TD>
-                <TD WIDTH=102>
-                        <P CLASS="western" STYLE="margin-bottom: 0cm; color: #000000">&nbsp;</P>
-                </TD>
-                <TD WIDTH=546>
-                        <P CLASS="western" STYLE="margin-bottom: 0cm; color: #000000"><FONT COLOR="#000000"><IMG SRC="fileadmin/deutschkurs/lektion-14_text53.jpg" NAME="Grafik2" ALIGN=BOTTOM WIDTH=350 HEIGHT=298 BORDER=0></FONT></P>
-                </TD>
-        </TR>
-<!-- /Bild  -->
+<body LANG="de-DE" DIR="LTR">
+
+<br>
+<div id="HEAD">
+  <IMG SRC="fileadmin/deutschkurs/merkzeichen-l.jpg" NAME="Grafik8" ALIGN=BOTTOM WIDTH=80 HEIGHT=109 BORDER=0>
+  <h1>###LEKNR###</h1>
+  <h1>###LEKTITLE###</h1>
+</div>
+<div id="Text">
+  <p><IMG SRC="fileadmin/deutschkurs/lektion-14_text53.jpg" WIDTH=350 HEIGHT=298 BORDER=0></p>
+</div>
