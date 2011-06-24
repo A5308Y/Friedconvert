@@ -2,7 +2,13 @@
 # -*- coding: utf-8 -*-
 
 ################### CONFIG ############################
-#HTML Templates and Colorcodes to use in the created html
+
+languages = ["en", "sp", "fr", "pl", "ru"]
+leclist = range(1,31) #[1,2]
+convert = False
+
+
+#HTML Templates and Colorcodes to use for the created html
 HTMLRES_PATH = "HTMLRES"
 
 colordic = {"Header":"#000066", "Text": "#0099cc"}
@@ -21,16 +27,15 @@ merkdic[u'Aufgaben'] = "merkzeichen-t.jpg"
 
 ###############################################################
 
-import codecs, os, glob, hashing, writing, parsing
-from helpers import message, read_html
+import os, glob, hashing, writing, parsing
+from helpers import message, read_html, create_directories, convert_to_html
 
 ###############################################################
 
-def run(leclist, convert = False):
-  languages = ["en", "sp"]
+def run(languages, leclist, convert = False):
   if convert:
     create_directories(leclist)
-    convert_to_html(leclist)
+    convert_to_html(languages, leclist)
   
   LL_dict = {}
   for lang in languages:
@@ -41,7 +46,7 @@ def run(leclist, convert = False):
     path = "../lections/lek" + str(lesson_nr)
     for infile in glob.glob(os.path.join(path, "*lek"+str(lesson_nr)+"*.html")):
       lang = infile[-7:-5]
-      if lang != "LL":
+      if lang != "LL" and lang in languages:
         message("processing "+infile)
 
         parser = parsing.MyHTMLParser()
@@ -66,8 +71,8 @@ def run(leclist, convert = False):
     len_dict[lesson_nr] = {}
     for lang in languages:
       len_dict[lesson_nr][lang] = len(LL_dict[lang][lesson_nr])
-    len_dict[lesson_nr].values().sort()
     len_sort = len_dict[lesson_nr].values()
+    len_sort.sort()
     if len_sort[0] != len_sort[-1]:
       message("Different number of foreign language snippets in lection" + str(lesson_nr))
       message(len_dict[lesson_nr])
@@ -77,10 +82,4 @@ def run(leclist, convert = False):
 ###############################################################
 
 if __name__ == '__main__':
-  
-  leclist = range(1,31) #[1,2]
-  convert = False
-  
-  run(leclist, convert)
-
-
+  run(languages, leclist, convert)

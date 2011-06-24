@@ -1,7 +1,7 @@
 #!/usr/bin/env python2
 # -*- coding: utf-8 -*-
 
-import codecs, os, cgi
+import codecs, os, cgi, glob
 
 #################### GLOBAL FUNCTIONS ##############
 
@@ -13,11 +13,11 @@ def create_directories(leclist):
     lekpath = "../lections/lek"+str(lesson_nr)+'/'
     os.system("mkdir " +lekpath)
 
-def convert_to_html(lesson_list):
+def convert_to_html(languages, lesson_list):
   ###Uses open office to convert all given doc-files to HTML
   message('converting raw docs to HTML')
   os.system('soffice -accept="socket,port=8100;urp;"')
-  for lang in ["en", "sp"]:
+  for lang in languages:
     path = "../rawdocs/"+lang
     for lesson_nr in lesson_list:
       lekpath = "../lections/lek"+str(lesson_nr)+'/'

@@ -12,18 +12,16 @@ FRAGEN:
 
 TODOS IN REIHENFOLGE:
 
-  * Inhaltsdateien nur einmal erstellen ("Texto.txt" abschaffen)
   * Auf einheitliche CSS-Datei beziehen.
   * Richtiges Handling von Lektions-Überschriften
   * Automatisiertes Handling von Wortschatz (mit Tabs?)??
 
 GLEICHE LABEL ANZAHL FÜR ALLE SPRACHEN
-  * Testcase schreiben: Gleiche Anzahl von Labels pro Lektion in allen Sprachen
   * Alle Sprachen von Fr. Schmidt anfordern
 
 ÜBERSCHRIFTEN UND #
   BESCHREIBUNG
-    * richtiges Setzen von Überschriften pro Doc Datei (abgehakt)
+    * richtiges Setzen von Überschriften pro Doc Datei im Englischen (abgehakt)
     * richtiges Setzen von '#' pro Doc Datei
   WORKFLOW
     für englische Version:
