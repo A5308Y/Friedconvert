@@ -1,0 +1,83 @@
+<!--  Aufzählung-->
+        <TR VALIGN=TOP>
+                <TD WIDTH=11 BGCOLOR="#ff6699">
+                        <P CLASS="western" STYLE="margin-bottom: 0cm; color: #000000"><BR>
+                        </P>
+                </TD>
+                <TD WIDTH=13>
+                        <P STYLE="margin-bottom: 0cm; color: #ff6699; page-break-before: auto">
+                        <BR>
+                        </P>
+                </TD>
+                <TD WIDTH=102>
+                        <P CLASS="fl-h3-western"><BR><BR>
+                        </P>
+                        <P CLASS="fl-h3-western"><BR><BR>
+                        </P>
+                        <P CLASS="fl-h3-western"><BR><BR>
+                        </P>
+                        <P CLASS="fl-h3-western"><BR><BR>
+                        </P>
+                        <P CLASS="fl-h3-western"><BR><BR>
+                        </P>
+                </TD>
+                <TD WIDTH=546>
+                        <P CLASS="fl-text-western"><FONT FACE="Verdana, sans-serif"><FONT SIZE=2><SPAN STYLE="font-style: normal">###_LL_LABEL_LESSON14_ITEM5###</SPAN></FONT>
+                        <I>zu</I> <FONT SIZE=2><SPAN STYLE="font-style: normal">###_LL_LABEL_LESSON14_ITEM6###</SPAN></FONT></FONT></P>
+                        <P CLASS="fl-text-western"><BR>
+                        </P>
+                        <TABLE WIDTH=521 BORDER=0 CELLPADDING=4 CELLSPACING=0>
+                                <COL WIDTH=60>
+                                <COL WIDTH=285>
+                                <COL WIDTH=152>
+<!--                  a)               -->
+                                <TR>
+                                        <TD WIDTH=60>
+                                                <P CLASS="fl-text-eingerueckt2-western"><FONT FACE="Verdana, sans-serif">a)</FONT></P>
+                                        </TD>
+                                        <TD WIDTH=285>
+                                                <P CLASS="fl-text-western"><FONT FACE="Verdana, sans-serif"><FONT SIZE=2><SPAN STYLE="font-style: normal">TEXT FOR a)</SPAN></FONT></FONT></P>
+                                        </TD>
+                                        <TD WIDTH=152 VALIGN=TOP>
+                                                <P CLASS="fl-text-western">&nbsp;</P>
+                                        </TD>
+                                </TR>
+                                <TR VALIGN=TOP>
+                                        <TD WIDTH=60>
+                                                <P CLASS="fl-text-eingerueckt2-western">&nbsp;</P>
+                                        </TD>
+                                        <TD WIDTH=285>
+                                                <P CLASS="fl-text-western"><FONT FACE="Verdana, sans-serif">Middle for a)</FONT></P>
+                                        </TD>
+                                        <TD WIDTH=152>
+                                                <P CLASS="fl-text-western"><FONT FACE="Verdana, sans-serif">Far Right for a)</FONT></P>
+                                        </TD>
+                                </TR>
+
+<!--                         / a)         -->
+<!--                  b)               -->
+                                <TR>
+                                        <TD WIDTH=60>
+                                                <P CLASS="fl-text-eingerueckt2-western"><FONT FACE="Verdana, sans-serif">a)</FONT></P>
+                                        </TD>
+                                        <TD WIDTH=285>
+                                                <P CLASS="fl-text-western"><FONT FACE="Verdana, sans-serif"><FONT SIZE=2><SPAN STYLE="font-style: normal">TEXT FOR b)</SPAN></FONT></FONT></P>
+                                        </TD>
+                                        <TD WIDTH=152 VALIGN=TOP>
+                                                <P CLASS="fl-text-western"></P>
+                                        </TD>
+                                </TR>
+                                <TR VALIGN=TOP>
+                                        <TD WIDTH=60>
+                                                <P CLASS="fl-text-eingerueckt2-western"></P>
+                                        </TD>
+                                        <TD WIDTH=285>
+                                                <P CLASS="fl-text-western"><FONT FACE="Verdana, sans-serif">Middle for b)</FONT></P>
+                                        </TD>
+                                        <TD WIDTH=152>
+                                                <P CLASS="fl-text-western"><FONT FACE="Verdana, sans-serif">Far Right for b)</FONT></P>
+                                        </TD>
+                                </TR>
+<!--           / b)                       -->
+                </TD>
+        </TR>

@@ -1,7 +1,7 @@
 #!/usr/bin/env python2
 # -*- coding: utf-8 -*-
 
-import codecs, os, cgi, glob
+import codecs, os, cgi, glob, HTMLParser
 
 #################### GLOBAL FUNCTIONS ##############
 
@@ -50,6 +50,40 @@ def sanitize_snippet(snippet, onlytabs = False):
   snippet = snippet.replace('\t','')
   return snippet
 
+def xmlize(content):
+  #translates the content from utf-8 to html
+  content=content.replace('"','&quot;') #klappt noch nicht
+  content=content.replace("'",'&apos;') #funktioniert
+  content = content.replace(unichr(252), "&uuml;")
+  content = content.replace(unichr(246), "&ouml;")
+  content = content.replace(unichr(214), "&Ouml;")
+  content = content.replace(unichr(220), "&Uuml;")
+  content = content.replace(unichr(228), "&auml;")
+  content = content.replace(unichr(196), "&Auml;")
+  return content
+  #return cgi.escape(content).encode('ascii', 'xmlcharrefreplace')
+
 def htmlize(content):
   #translates the content from utf-8 to html
-  return cgi.escape(content).encode('ascii', 'xmlcharrefreplace')
+  #content = cgi.escape(content).encode('ascii', 'xmlcharrefreplace')
+
+  content = content.replace("\n", "<br>")
+  content = content.replace(unichr(252), "&uuml;")
+  content = content.replace(unichr(246), "&ouml;")
+  content = content.replace(unichr(214), "&Ouml;")
+  content = content.replace(unichr(220), "&Uuml;")
+  content = content.replace(unichr(223), "&szlig;")
+  content = content.replace(unichr(228), "&auml;")
+  content = content.replace(unichr(196), "&Auml;")
+
+  content = content.replace(unichr(195169), "&eacute;")
+
+  content = content.replace(unichr(194180), "\'")
+  content = content.replace(unichr(8222), "\"")
+  content = content.replace(unichr(8221), "\"")
+  content = content.replace(unichr(8220), "\"")
+
+  content = content.replace(unichr(8211), "-")
+  content = content.replace(unichr(8212), "-")
+  
+  return content.replace('!!?','<').replace('?!!','>')

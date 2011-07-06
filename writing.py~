@@ -56,7 +56,6 @@ class Writer(object):
     text = read_html(self.HTMLRES_PATH +"/Body.txt")
     text = text.replace("###TEXT###", content)
     text = text.replace("###TITLE###", htmlize(section))
-    text = text.replace("###MERKFILE###", self.merkdic[section])
     if "Text" in section:
       text = text.replace("###COLOR###", self.colordic["Text"])
       text = text.replace("###MERKFILE###", self.merkdic["Text"])
@@ -88,7 +87,7 @@ class Writer(object):
         sniplist = LL_dict[lang][lesson_nr]
         for item_nr in range(len(sniplist)):
           snippet = sanitize_snippet(sniplist[item_nr])
-          snippet = htmlize(snippet)
+          snippet = xmlize(snippet)
           label = 'label_lesson_'+str(lesson_nr)+'_item'+str(item_nr+1)
           output += '      <label index="'+label+'">'+snippet+'</label>\n'
       output += '    </languageKey>\n'

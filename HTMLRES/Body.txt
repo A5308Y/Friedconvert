@@ -1,6 +1,5 @@
 <div id="###SECTION###">
-        <IMG SRC="fileadmin/deutschkurs/###MERKFILE###" NAME="Grafik4" ALIGN=BOTTOM WIDTH=100 HEIGHT=106 BORDER=0>
+        <IMG SRC="###MERKFILE###" NAME="Grafik4" ALIGN=BOTTOM WIDTH=100 HEIGHT=106 BORDER=0>
         <h2>###TITLE###</h2>
         <p>###TEXT###</p>
 </div>
-

@@ -87,7 +87,7 @@ class Writer(object):
         sniplist = LL_dict[lang][lesson_nr]
         for item_nr in range(len(sniplist)):
           snippet = sanitize_snippet(sniplist[item_nr])
-          snippet = htmlize(snippet)
+          snippet = xmlize(snippet)
           label = 'label_lesson_'+str(lesson_nr)+'_item'+str(item_nr+1)
           output += '      <label index="'+label+'">'+snippet+'</label>\n'
       output += '    </languageKey>\n'
@@ -100,7 +100,7 @@ class Writer(object):
 
   def write_sec_txt(self, content, section):
     section = section.replace('/', '')
-    output_file = codecs.open(self.PATH+"lek"+str(self.lesson_nr)+"_"+section+".txt", 'w', "utf-8")
+    output_file = codecs.open(self.PATH+"lektion"+str(self.lesson_nr)+"_"+section+".txt", 'w', "utf-8")
     output_file.write(content)
     output_file.close()
 

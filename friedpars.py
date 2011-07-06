@@ -6,7 +6,9 @@
 languages = ["en", "sp", "fr", "pl", "ru"]
 leclist = range(1,31) #[1,2]
 convert = False
+upload = False
 
+HTML_OUTPUT_PATH = "/home/marvin/Desktop/Friedländer/lections/"
 
 #HTML Templates and Colorcodes to use for the created html
 HTMLRES_PATH = "HTMLRES"
@@ -18,12 +20,13 @@ colordic[u'\xdcbungen'] = "#0099cc"
 colordic[u'Fragen'] = "#0099cc"
 colordic[u'Aufgaben'] = "#0099cc"
 
-merkdic = {"Header":"merkzeichen-l.jpg", "Text": "merkzeichen-t.jpg"}
-merkdic["Wortschatz"] = "merkzeichen-w.jpg"
-merkdic["Grammatik"] ="merkzeichen-g.jpg"
-merkdic[u'\xdcbungen'] = "merkzeichen-t.jpg"
-merkdic[u'Fragen'] = "merkzeichen-t.jpg"
-merkdic[u'Aufgaben'] = "merkzeichen-t.jpg"
+server_pictuer_path = "fileadmin/deutschkurs/"
+merkdic = {"Header": server_pictuer_path+"merkzeichen-l.jpg", "Text": server_pictuer_path+"merkzeichen-t.jpg"}
+merkdic["Wortschatz"] = server_pictuer_path+"merkzeichen-w.jpg"
+merkdic["Grammatik"] =server_pictuer_path+"merkzeichen-g.jpg"
+merkdic[u'\xdcbungen'] = server_pictuer_path+"merkzeichen-t.jpg"
+merkdic[u'Fragen'] = server_pictuer_path+"merkzeichen-t.jpg"
+merkdic[u'Aufgaben'] = server_pictuer_path+"merkzeichen-t.jpg"
 
 ###############################################################
 
@@ -44,6 +47,7 @@ def run(languages, leclist, convert = False):
     PATH = "../lections/lek"+str(lesson_nr)+"/"
     OUTFILE = PATH+"lek"+str(lesson_nr)+"_LL.html"
     path = "../lections/lek" + str(lesson_nr)
+    
     for infile in glob.glob(os.path.join(path, "*lek"+str(lesson_nr)+"*.html")):
       lang = infile[-7:-5]
       if lang != "LL" and lang in languages:
@@ -54,13 +58,12 @@ def run(languages, leclist, convert = False):
         writer = writing.Writer(dehasher, PATH, HTMLRES_PATH, colordic, merkdic)
 
         dehasher.inlist = []
-        lekpath = "../lections/lek"+str(lesson_nr)+'/'
         parser.feed(read_html(infile))
         snipdic = parser.snipdic
 
         if lang == 'en':
           writer.create_html(snipdic, OutsourceTXT = True)
-          writer.write_html(lekpath+"lek"+str(lesson_nr)+"_LL.html")
+          writer.write_html(HTML_OUTPUT_PATH+"lektion"+str(lesson_nr)+".tmpl")
         else:
           writer.create_html(snipdic)
 
@@ -77,7 +80,10 @@ def run(languages, leclist, convert = False):
       message("Different number of foreign language snippets in lection" + str(lesson_nr))
       message(len_dict[lesson_nr])
       
-  writer.write_xml("locallang.xml", LL_dict)
+  writer.write_xml(HTML_OUTPUT_PATH+"locallang_deutschkurs.xml", LL_dict)
+  
+  #if upload:
+    #os.system
 
 ###############################################################
 

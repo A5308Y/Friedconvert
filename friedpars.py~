@@ -7,6 +7,7 @@ languages = ["en", "sp", "fr", "pl", "ru"]
 leclist = range(1,31) #[1,2]
 convert = False
 
+HTML_OUTPUT_PATH = "/home/marvin/Dropbox/Public/lections/"
 
 #HTML Templates and Colorcodes to use for the created html
 HTMLRES_PATH = "HTMLRES"
@@ -44,6 +45,7 @@ def run(languages, leclist, convert = False):
     PATH = "../lections/lek"+str(lesson_nr)+"/"
     OUTFILE = PATH+"lek"+str(lesson_nr)+"_LL.html"
     path = "../lections/lek" + str(lesson_nr)
+    
     for infile in glob.glob(os.path.join(path, "*lek"+str(lesson_nr)+"*.html")):
       lang = infile[-7:-5]
       if lang != "LL" and lang in languages:
@@ -54,13 +56,12 @@ def run(languages, leclist, convert = False):
         writer = writing.Writer(dehasher, PATH, HTMLRES_PATH, colordic, merkdic)
 
         dehasher.inlist = []
-        lekpath = "../lections/lek"+str(lesson_nr)+'/'
         parser.feed(read_html(infile))
         snipdic = parser.snipdic
 
         if lang == 'en':
           writer.create_html(snipdic, OutsourceTXT = True)
-          writer.write_html(lekpath+"lek"+str(lesson_nr)+"_LL.html")
+          writer.write_html(HTML_OUTPUT_PATH+"lek"+str(lesson_nr)+".html")
         else:
           writer.create_html(snipdic)
 

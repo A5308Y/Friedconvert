@@ -1,3 +1,9 @@
 <br><br><br>
+
+
+<input type="hidden" name="tx_pilmailform_pi1[text][email]" value="###_FEUSER_EMAIL###" />
+<input type="hidden" name="tx_pilmailform_pi1[text][name]" value="###_FEUSER_NAME###" />
+<!-- ###TMAIL_FORM### end -->
+
 </body>
 </html>

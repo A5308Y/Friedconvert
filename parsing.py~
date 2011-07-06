@@ -18,6 +18,14 @@ class MyHTMLParser(HTMLParser):
     self.active = False
     self.inlist = []
 
+  def handle_starttag(self, tag, attributes):
+    if tag == 'i':
+      self.starttag = u'!!?i?!!!'
+      self.endtag = u'!!?/i?!!!'
+    else:
+      self.starttag = u''
+      self.endtag = u''
+
   def handle_data(self, text):
     snipsecdict = self.snipdic["snipsecdict"]
     tagtext = repr(self.get_starttag_text())
@@ -27,13 +35,14 @@ class MyHTMLParser(HTMLParser):
     if self.active:
       snippet = unicode(text)
       self.snipdic["sniptext"] += snippet
+      snippet = self.starttag+snippet+self.endtag
 
       #Determine the caption by the given key words and some thoughts about how captions show up in
       #the text. This works a lot better than the alternative methods with headings, but some keywords
       #show up in the same form somewhere else in the text. Needs less work in the rawdocs than
       #the alternative though.
       
-      seccodes = ["Grammatik","Wortschatz", "Aufgaben", "Aufgabe", u"Übungen"]#"Fragen"
+      seccodes = ["Grammatik","Wortschatz", u"Übungen"]#"Fragen", "Aufgaben", "Aufgabe",
       sec = sanitize_snippet(text)
       if sec !=  '':
         if sec in seccodes or (sec[0:4] == "Text" and sec[4:8].replace(" ","").isdigit() and len(sec) <= 9 and not ":" in sec):

@@ -1,0 +1,32 @@
+* {margin:0;margin-left: 3px;padding:0;}
+
+h1 {
+	margin-left:10px;
+	font-size:30px;
+}
+
+h2 {
+	margin-left:50px;
+}
+
+h3 {
+	margin-left:80px;
+}
+
+p {
+	margin-left: 200px;
+}
+
+#dreieck {
+	margin-left: 0px;
+	float: left;
+}
+#Grammatik {
+	border-left: 8px solid #F8A21A;
+}
+#Wortschatz {
+	border-left: 8px solid #00FAAA;
+}
+#Text {
+	border-left: 8px solid #00FAAA;
+}

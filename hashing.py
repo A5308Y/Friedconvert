@@ -19,7 +19,7 @@ class Dehasher(object):
       sanitize_snippet(snippet)
       if snippet != '':
         if isodd(i):
-          insnips.append(snippet)
+          insnips.append("!!?br?!!!!?br?!!"+snippet+"!!?br?!!!!?br?!!")
         else:
           outsnips.append(snippet)
       i+=1

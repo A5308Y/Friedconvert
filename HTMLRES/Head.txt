@@ -3,17 +3,19 @@
 <html>
 <head>
 <title>###LEKNR###</title>
-  <link rel="stylesheet" type="text/css" href="../formate.css">
+  <link rel="stylesheet" type="text/css" href="fileadmin/templates/formate.css">
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" >
 </head>
 
 <body LANG="de-DE" DIR="LTR">
-
+<!-- ###TMAIL_FORM### begin -->
 <br>
+  <link rel="stylesheet" type="text/css" href="fileadmin/templates/formate.css">
 <div id="HEAD">
-  <IMG SRC="fileadmin/deutschkurs/merkzeichen-l.jpg" NAME="Grafik8" ALIGN=BOTTOM WIDTH=80 HEIGHT=109 BORDER=0>
+  <IMG SRC="merkzeichen-l.jpg" NAME="Grafik8" ALIGN=BOTTOM WIDTH=80 HEIGHT=109 BORDER=0>
   <h1>###LEKNR###</h1>
   <h1>###LEKTITLE###</h1>
 </div>
 <div id="Text">
-  <p><IMG SRC="fileadmin/deutschkurs/lektion-14_text53.jpg" WIDTH=350 HEIGHT=298 BORDER=0></p>
+  <p><IMG SRC="../lektion-14_text53.jpg" WIDTH=350 HEIGHT=298 BORDER=0></p>
 </div>
