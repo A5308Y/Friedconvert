@@ -54,12 +54,6 @@ def xmlize(content):
   #translates the content from utf-8 to html
   content=content.replace('"','&quot;') #klappt noch nicht
   content=content.replace("'",'&apos;') #funktioniert
-  content = content.replace(unichr(252), "&uuml;")
-  content = content.replace(unichr(246), "&ouml;")
-  content = content.replace(unichr(214), "&Ouml;")
-  content = content.replace(unichr(220), "&Uuml;")
-  content = content.replace(unichr(228), "&auml;")
-  content = content.replace(unichr(196), "&Auml;")
   return content
   #return cgi.escape(content).encode('ascii', 'xmlcharrefreplace')
 
